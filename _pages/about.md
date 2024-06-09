@@ -50,4 +50,4 @@ More info about configuring Academic Pages can be found in [the guide](https://a
 
 The video illustrates how a drug molecule (montelukast) may interact with a protein (interleukin-33) in a physiological condition. This is one of the repurposed hits that has shown promising results in-vitro.
 
-{% include youtubePlayer.html id="b0c43LOoPMw" %}
+{% include youtube.html id="JLMbpiywVxQ" %}
