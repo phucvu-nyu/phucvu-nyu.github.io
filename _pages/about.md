@@ -56,11 +56,11 @@ Last year memories
 ------
 <div class="carousel">
 
-<img src="PQAR_1.jpeg">
+<img src="/images/PQAR_1.jpeg">
 
-<img src="PQAR_2.jpeg">
+<img src="/images/PQAR_2.jpeg">
 
-<img src="PQAR_3.jpeg">
+<img src="/images/PQAR_3.jpeg">
 
 </div>
 
