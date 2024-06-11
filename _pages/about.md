@@ -54,8 +54,15 @@ The video illustrates how a drug molecule (montelukast) may interact with a prot
 
 Last year memories
 ------
+<div class="carousel">
 
-{% include youtube.html id="s7SKkWC5WmA" %}
+<img src="PQAR_1.jpeg">
 
-{% include carousel.html height="50" unit="%" duration="7" %}
+<img src="PQAR_2.jpeg">
+
+<img src="PQAR_3.jpeg">
+
+</div>
+
+
 
