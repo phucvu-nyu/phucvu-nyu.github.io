@@ -85,7 +85,10 @@ Last year memories
     <span class="sr-only">Next</span>
   </a>
 </div>
-=
+
+
+
+  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
 
 
 
