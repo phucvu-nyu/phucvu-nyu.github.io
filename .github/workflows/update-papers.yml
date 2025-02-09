@@ -19,16 +19,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '16'
-          cache: 'npm'
           
       - name: Install dependencies
         run: |
-          if [ -f package.json ]; then
-            npm ci || npm install
-          else
-            npm init -y
-            npm install axios cheerio
-          fi
+          npm install
           
       - name: Run paper update script
         run: |
