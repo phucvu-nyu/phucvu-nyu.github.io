@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Latest Research Papers</title>
+    <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
 </head>
@@ -11,19 +12,15 @@
     <nav class="navbar">
         <div class="nav-content">
             <a href="/" class="nav-logo">← Back to Home</a>
-            <div class="last-updated">Last updated: <span id="updateTime">Loading...</span></div>
+            <div class="last-updated">Last updated: <span id="updateTime"></span></div>
         </div>
     </nav>
 
     <main>
         <section class="hero">
             <h1>Latest Research Papers</h1>
-            <p>Auto-updating collection of papers from arXiv</p>
-            <div class="keywords">
-                Keywords: <span class="keyword">scRNA-seq</span>
-                <span class="keyword">CRISPR</span>
-                <span class="keyword">causal inference</span>
-            </div>
+            <p>Auto-updating collection from arXiv</p>
+            <div id="keywords" class="keywords"></div>
         </section>
 
         <section id="papers" class="papers-grid">
@@ -31,6 +28,38 @@
         </section>
     </main>
 
-    <script src="papers.js"></script>
+    <script>
+        async function loadPapers() {
+            try {
+                const response = await fetch('papers.json');
+                const data = await response.json();
+                
+                const papersSection = document.getElementById('papers');
+                const updateTime = document.getElementById('updateTime');
+                const keywords = document.getElementById('keywords');
+                
+                updateTime.textContent = new Date(data.lastUpdated).toLocaleString();
+                
+                // Display papers
+                papersSection.innerHTML = data.papers.map(paper => `
+                    <div class="paper-card">
+                        <h2 class="paper-title">${paper.title}</h2>
+                        <p class="paper-authors">${paper.authors.join(', ')}</p>
+                        <p class="paper-abstract">${paper.summary}</p>
+                        <div class="paper-links">
+                            <a href="${paper.link}" class="paper-link" target="_blank">View on arXiv</a>
+                            <a href="${paper.link.replace('abs', 'pdf')}" class="paper-link" target="_blank">Download PDF</a>
+                        </div>
+                    </div>
+                `).join('');
+                
+            } catch (error) {
+                console.error('Error loading papers:', error);
+                document.getElementById('papers').innerHTML = '<div class="error">Error loading papers</div>';
+            }
+        }
+
+        loadPapers();
+    </script>
 </body>
 </html>

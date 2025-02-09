@@ -16,20 +16,14 @@ jobs:
         with:
           fetch-depth: 0
           
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-python@v4
         with:
-          node-version: '16'
-          
-      - name: Install dependencies
-        run: |
-          npm install
+          python-version: '3.x'
           
       - name: Run paper update script
         run: |
           mkdir -p papers
-          node scripts/fetch-papers.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          python scripts/fetch_papers.py
           
       - name: Commit and push if changed
         run: |

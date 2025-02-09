@@ -1,6 +1,7 @@
 {
-    "keywords": ["scRNA-seq", "CRISPR", "causal inference"],
+    "keywords": ["RNAseq"],
     "max_results": 20,
     "sort_by": "submittedDate",
+    "sortOrder": "descending",
     "days_back": 30
 }
