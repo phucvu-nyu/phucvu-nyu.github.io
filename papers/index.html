@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest Research Papers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">← Back to Home</a>
+            <div class="last-updated">Last updated: <span id="updateTime">Loading...</span></div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Latest Research Papers</h1>
+            <p>Auto-updating collection of papers from arXiv</p>
+            <div class="keywords">
+                Keywords: <span class="keyword">scRNA-seq</span>
+                <span class="keyword">CRISPR</span>
+                <span class="keyword">causal inference</span>
+            </div>
+        </section>
+
+        <section id="papers" class="papers-grid">
+            <div class="loading">Loading papers...</div>
+        </section>
+    </main>
+
+    <script src="papers.js"></script>
+</body>
+</html>

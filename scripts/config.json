@@ -1,5 +1,6 @@
 {
-    "keywords": ["machine learning", "statistics", "biostatistics"],
-    "max_results": 10,
-    "sort_by": "lastUpdatedDate"
+    "keywords": ["scRNA-seq", "CRISPR", "causal inference"],
+    "max_results": 20,
+    "sort_by": "submittedDate",
+    "days_back": 30
 }
