@@ -109,12 +109,32 @@ main {
 .loading {
     text-align: center;
     padding: 2rem;
-    color: #64748b;
+    color: #666;
+}
+
+.error {
+    text-align: center;
+    padding: 2rem;
+    color: #dc3545;
 }
 
 .last-updated {
     color: #64748b;
     font-size: 0.9rem;
+}
+
+.refresh-button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.refresh-button:hover {
+    background: #0052a3;
 }
 
 @media (max-width: 768px) {
