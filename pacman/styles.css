@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: #1a1a1a;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.score {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #ffd700;
+}
+
+.home-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+#gameCanvas {
+    background: #000;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.controls {
+    margin-top: 20px;
+    color: #888;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #ffd700;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#startButton:hover {
+    background: #ffed4a;
+}
