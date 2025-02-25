@@ -138,6 +138,33 @@ footer {
     color: #64748b;
 }
 
+/* Map styles */
+#map {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.legend {
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+#colorScale {
+    height: 20px;
+    margin: 10px 0;
+    background: linear-gradient(to right, #313695, #4575b4, #74add1, #abd9e9, #fee090, #fdae61, #f46d43, #d73027);
+}
+
+.leaflet-popup-content {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
 @media (max-width: 768px) {
     .nav-content {
         flex-direction: column;

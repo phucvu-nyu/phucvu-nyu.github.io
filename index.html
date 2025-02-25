@@ -6,12 +6,16 @@
     <title>My Coding Blog</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
             <a href="/" class="nav-logo">Coding Blog</a>
             <div class="nav-links">
+                <a href="/map/">Temperature Map</a>
                 <a href="/pacman/">Pac-Man Game</a>
                 <a href="/papers/">Latest Papers</a>
             </div>
@@ -44,6 +48,15 @@
 
         <section class="content">
             <div class="card">
+                <h2>World Temperature Map</h2>
+                <div id="map"></div>
+                <div class="legend">
+                    <h3>Temperature Scale (°C)</h3>
+                    <div id="colorScale"></div>
+                </div>
+            </div>
+
+            <div class="card">
                 <h2>Featured Projects</h2>
                 <ul>
                     <li><a href="/pacman/">Interactive Pac-Man Game</a></li>
@@ -56,5 +69,6 @@
     <footer>
         <p>Created with AI assistance - GitHub Pages</p>
     </footer>
+    <script src="./map/map.js"></script>
 </body>
 </html>

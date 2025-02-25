@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Temperature Map</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>World Temperature Map</h1>
+            <a href="/" class="home-link">← Back to Home</a>
+        </div>
+        <div id="map"></div>
+        <div class="legend">
+            <h3>Temperature Scale (°C)</h3>
+            <div id="colorScale"></div>
+        </div>
+    </div>
+    <script src="map.js"></script>
+</body>
+</html>
