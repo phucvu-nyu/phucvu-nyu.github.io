@@ -1,10 +1,22 @@
 {
-  "lastUpdated": "2025-03-05T00:39:20.594906",
+  "lastUpdated": "2025-03-06T00:39:02.234308",
   "keywords": [
     "RNAseq"
   ],
   "totalResults": 20,
   "papers": [
+    {
+      "title": "Trajectory Inference with Smooth Schrödinger Bridges",
+      "authors": [
+        "Wanli Hong",
+        "Yuliang Shi",
+        "Jonathan Niles-Weed"
+      ],
+      "summary": "Motivated by applications in trajectory inference and particle tracking, we\nintroduce Smooth Schr\\\"odinger Bridges. Our proposal generalizes prior work by\nallowing the reference process in the Schr\\\"odinger Bridge problem to be a\nsmooth Gaussian process, leading to more regular and interpretable trajectories\nin applications. Though na\\\"ively smoothing the reference process leads to a\ncomputationally intractable problem, we identify a class of processes\n(including the Mat\\'ern processes) for which the resulting Smooth Schr\\\"odinger\nBridge problem can be lifted to a simpler problem on phase space, which can be\nsolved in polynomial time. We develop a practical approximation of this\nalgorithm that outperforms existing methods on numerous simulated and real\nsingle-cell RNAseq datasets. The code can be found at\nhttps://github.com/WanliHongC/Smooth_SB",
+      "link": "http://arxiv.org/abs/2503.00530v1",
+      "published": "2025-03-01T15:12:01Z",
+      "updated": "2025-03-01T15:12:01Z"
+    },
     {
       "title": "Large Language Models Meet Graph Neural Networks for Text-Numeric Graph\n  Reasoning",
       "authors": [
@@ -288,19 +300,6 @@
       "link": "http://arxiv.org/abs/1908.09653v1",
       "published": "2019-08-23T12:20:04Z",
       "updated": "2019-08-23T12:20:04Z"
-    },
-    {
-      "title": "ReadsMap: a new tool for high precision mapping of DNAseq and RNAseq\n  read sequences",
-      "authors": [
-        "Igor Seledtsov",
-        "Jaroslav Efremov",
-        "Vladimir Molodtsov",
-        "Victor Solovyev"
-      ],
-      "summary": "There are currently plenty of programs available for mapping short sequences\n(reads) to a genome. Most of them, however, including such popular and actively\ndeveloped programs as Bowtie, BWA, TopHat and many others, are based on\nBurrows-Wheeler Transform (BWT) algorithm. This approach is very effective for\nmapping high-homology reads, but runs into problems when mapping reads with\nhigh level of errors or SNP. Also it has problems with mapping RNASeq spliced\nreads (such as reads that aligning with gaps corresponding intron sequences),\nthe kind that is essential for finding introns and alternative splicing gene\nisoforms. Meanwhile, finding intron positions is the most important task for\ndetermining the gene structure, and especially alternatively spliced variants\nof genes. In this paper, we propose a new algorithm that involves hashing\nreference genome. ReadsMap program, implementing such algorithm, demonstrate\nvery high-accuracy mapping of large number of short reads to one or more\ngenomic contigs. It is achieved mostly by better alignment of very short parts\nof reads separated by long introns with accounting information from mapping\nother reads containing the same intron inserted between bigger blocks.\nAvailability and implementation: ReadsMap is implemented in C. It is\nincorporated in Fgenesh++ gene identification pipeline and is freely available\nto academic users at Softberry web server www.softberry.com.",
-      "link": "http://arxiv.org/abs/1908.01445v1",
-      "published": "2019-08-05T02:29:04Z",
-      "updated": "2019-08-05T02:29:04Z"
     }
   ]
 }
