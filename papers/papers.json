@@ -1,9 +1,9 @@
 {
-  "lastUpdated": "2025-09-01T00:51:57.201064",
+  "lastUpdated": "2025-09-02T00:41:34.919193",
   "keywords": [
     "RNAseq"
   ],
-  "totalResults": 17,
+  "totalResults": 20,
   "papers": [
     {
       "title": "Trajectory Inference with Smooth Schrödinger Bridges",
@@ -255,6 +255,51 @@
       "link": "http://arxiv.org/abs/1910.11928v2",
       "published": "2019-10-25T20:44:15Z",
       "updated": "2020-03-03T08:55:17Z"
+    },
+    {
+      "title": "Noncoding RNAs serve as the deadliest regulators for cancer",
+      "authors": [
+        "Anyou Wang",
+        "Hai Rong"
+      ],
+      "summary": "Cancer is one of the leading causes of human death. Many efforts have made to\nunderstand its mechanism and have further identified many proteins and DNA\nsequence variations as suspected targets for therapy. However, drugs targeting\nthese targets have low success rates, suggesting the basic mechanism still\nremains unclear. Here, we develop a computational software combining Cox\nproportional-hazards model and stability-selection to unearth an overlooked,\nyet the most important cancer drivers hidden in massive data from The Cancer\nGenome Atlas (TCGA), including 11,574 RNAseq samples and clinic data.\nGenerally, noncoding RNAs primarily regulate cancer deaths and work as the\ndeadliest cancer inducers and repressors, in contrast to proteins as\nconventionally thought. Especially, processed-pseudogenes serve as the primary\ncancer inducers, while lincRNA and antisense RNAs dominate the repressors.\nStrikingly, noncoding RNAs serves as the universal strongest regulators for all\ncancer types although personal clinic variables such as alcohol and smoking\nsignificantly alter cancer genome. Furthermore, noncoding RNAs also work as\ncentral hubs in cancer regulatory network and as biomarkers to discriminate\ncancer types. Therefore, noncoding RNAs overall serve as the deadliest cancer\nregulators, which refreshes the basic concept of cancer mechanism and builds a\nnovel basis for cancer research and therapy. Biological functions of\npseudogenes have rarely been recognized. Here we reveal them as the most\nimportant cancer drivers for all cancer types from big data, breaking a wall to\nexplore their biological potentials.",
+      "link": "http://arxiv.org/abs/1910.03934v1",
+      "published": "2019-10-08T05:42:36Z",
+      "updated": "2019-10-08T05:42:36Z"
+    },
+    {
+      "title": "A data-driven method for quantifying the impact of a genetic circuit on\n  its host",
+      "authors": [
+        "Aqib Hasnain",
+        "Subhrajit Sinha",
+        "Yuval Dorfan",
+        "Amin Espah Borujeni",
+        "Yongjin Park",
+        "Paul Maschhoff",
+        "Uma Saxena",
+        "Joshua Urrutia",
+        "Niall Gaffney",
+        "Diveena Becker",
+        "Atsede Siba",
+        "Narendra Maheshri",
+        "Ben Gordon",
+        "Chris Voigt",
+        "Enoch Yeung"
+      ],
+      "summary": "Genetic circuits are designed to implement certain logic in living cells,\nkeeping burden on the host cell minimal. However, manipulating the genome often\nwill have a significant impact for various reasons (usage of the cell machinery\nto express new genes, toxicity of genes, interactions with native genes, etc.).\nIn this work we utilize Koopman operator theory to construct data-driven models\nof transcriptomic-level dynamics from noisy and temporally sparse RNAseq\nmeasurements. We show how Koopman models can be used to quantify impact on\ngenetic circuits. We consider an experimental example, using high-throughput\nRNAseq measurements collected from wild-type E. coli, single gate components\ntransformed in E. coli, and a NAND circuit composed from individual gates in E.\ncoli, to explore how Koopman subspace functions encode increasing circuit\ninterference on E. coli chassis dynamics. The algorithm provides a novel method\nfor quantifying the impact of synthetic biological circuits on host-chassis\ndynamics.",
+      "link": "http://arxiv.org/abs/1909.06455v1",
+      "published": "2019-09-13T21:19:41Z",
+      "updated": "2019-09-13T21:19:41Z"
+    },
+    {
+      "title": "Fusing heterogeneous data sets",
+      "authors": [
+        "Yipeng Song"
+      ],
+      "summary": "In systems biology, it is common to measure biochemical entities at different\nlevels of the same biological system. One of the central problems for the data\nfusion of such data sets is the heterogeneity of the data. This thesis\ndiscusses two types of heterogeneity. The first one is the type of data, such\nas metabolomics, proteomics and RNAseq data in genomics. These different omics\ndata reflect the properties of the studied biological system from different\nperspectives. The second one is the type of scale, which indicates the\nmeasurements obtained at different scales, such as binary, ordinal, interval\nand ratio-scaled variables. In this thesis, we developed several statistical\nmethods capable to fuse data sets of these two types of heterogeneity. The\nadvantages of the proposed methods in comparison with other approaches are\nassessed using comprehensive simulations as well as the analysis of real\nbiological data sets.",
+      "link": "http://arxiv.org/abs/1908.09653v1",
+      "published": "2019-08-23T12:20:04Z",
+      "updated": "2019-08-23T12:20:04Z"
     }
   ]
 }
