@@ -1,10 +1,116 @@
 {
-  "lastUpdated": "2025-11-13T00:43:29.416441",
+  "lastUpdated": "2025-11-15T00:42:55.153060",
   "keywords": [
     "RNAseq"
   ],
   "totalResults": 20,
   "papers": [
+    {
+      "title": "Trajectory Inference with Smooth Schrödinger Bridges",
+      "authors": [
+        "Wanli Hong",
+        "Yuliang Shi",
+        "Jonathan Niles-Weed"
+      ],
+      "summary": "Motivated by applications in trajectory inference and particle tracking, we introduce Smooth Schrödinger Bridges. Our proposal generalizes prior work by allowing the reference process in the Schrödinger Bridge problem to be a smooth Gaussian process, leading to more regular and interpretable trajectories in applications. Though naïvely smoothing the reference process leads to a computationally intractable problem, we identify a class of processes (including the Matérn processes) for which the resulting Smooth Schrödinger Bridge problem can be lifted to a simpler problem on phase space, which can be solved in polynomial time. We develop a practical approximation of this algorithm that outperforms existing methods on numerous simulated and real single-cell RNAseq datasets. The code can be found at https://github.com/WanliHongC/Smooth_SB",
+      "link": "http://arxiv.org/abs/2503.00530v1",
+      "published": "2025-03-01T15:12:01Z",
+      "updated": "2025-03-01T15:12:01Z"
+    },
+    {
+      "title": "Large Language Models Meet Graph Neural Networks for Text-Numeric Graph Reasoning",
+      "authors": [
+        "Haoran Song",
+        "Jiarui Feng",
+        "Guangfu Li",
+        "Michael Province",
+        "Philip Payne",
+        "Yixin Chen",
+        "Fuhai Li"
+      ],
+      "summary": "In real-world scientific discovery, human beings always make use of the accumulated prior knowledge with imagination pick select one or a few most promising hypotheses from large and noisy data analysis results. In this study, we introduce a new type of graph structure, the text-numeric graph (TNG), which is defined as graph entities and associations have both text-attributed information and numeric information. The TNG is an ideal data structure model for novel scientific discovery via graph reasoning because it integrates human-understandable textual annotations or prior knowledge, with numeric values that represent the observed or activation levels of graph entities or associations in different samples. Together both the textual information and numeric values determine the importance of graph entities and associations in graph reasoning for novel scientific knowledge discovery. We further propose integrating large language models (LLMs) and graph neural networks (GNNs) to analyze the TNGs for graph understanding and reasoning. To demonstrate the utility, we generated the text-omic(numeric) signaling graphs (TOSG), as one type of TNGs, in which all graphs have the same entities, associations and annotations, but have sample-specific entity numeric (omic) values using single cell RNAseq (scRNAseq) datasets of different diseases. We proposed joint LLM-GNN models for key entity mining and signaling pathway mining on the TOSGs. The evaluation results showed the LLM-GNN and TNGs models significantly improve classification accuracy and network inference. In conclusion, the TNGs and joint LLM-GNN models are important approaches for scientific discovery.",
+      "link": "http://arxiv.org/abs/2501.16361v1",
+      "published": "2025-01-21T00:29:23Z",
+      "updated": "2025-01-21T00:29:23Z"
+    },
+    {
+      "title": "A mapping-free NLP-based technique for sequence search in Nanopore long-reads",
+      "authors": [
+        "Tomasz Strzoda",
+        "Lourdes Cruz-Garcia",
+        "Mustafa Najim",
+        "Christophe Badie",
+        "Joanna Polanska"
+      ],
+      "summary": "In unforeseen situations, such as nuclear power plant's or civilian radiation accidents, there is a need for effective and computationally inexpensive methods to determine the expression level of a selected gene panel, allowing for rough dose estimates in thousands of donors. The new generation in-situ mapper, fast and of low energy consumption, working at the level of single nanopore output, is in demand. We aim to create a sequence identification tool that utilizes Natural Language Processing (NLP) techniques and ensures a high level of negative predictive value (NPV) compared to the classical approach. The training dataset consisted of RNASeq data from 6 samples. Having tested multiple NLP models, the best configuration analyses the entire sequence and uses a word length of 3 base pairs with one-word neighbor on each side. For the considered FDXR gene, the achieved mean balanced accuracy (BACC) was 98.29% and NPV 99.25%, compared to minimap2's performance in a cross-validation scenario. Reducing the dictionary from 1024 to 145 changed BACC to 96.49% and the NPV to 98.15%. Obtained NLP model, validated on an external independent genome sequencing dataset, gave NPV of 99.64% for complete and 95.87% for reduced dictionary. The salmon-estimated read counts differed from the classical approach on average by 3.48% for the complete dictionary and by 5.82% for the reduced one. We conclude that for long Oxford Nanopore reads, an NLP-based approach can successfully replace classical mapping in case of emergency. The developed NLP model can be easily retrained to identify selected transcripts and/or work with various long-read sequencing techniques. Our results of the study clearly demonstrate the potential of applying techniques known from classical text processing to nucleotide sequences and represent a significant advancement in this field of science.",
+      "link": "http://arxiv.org/abs/2406.14187v1",
+      "published": "2024-06-20T10:48:19Z",
+      "updated": "2024-06-20T10:48:19Z"
+    },
+    {
+      "title": "A Multi-Domain Multi-Task Approach for Feature Selection from Bulk RNA Datasets",
+      "authors": [
+        "Karim Salta",
+        "Tomojit Ghosh",
+        "Michael Kirby"
+      ],
+      "summary": "In this paper a multi-domain multi-task algorithm for feature selection in bulk RNAseq data is proposed. Two datasets are investigated arising from mouse host immune response to Salmonella infection. Data is collected from several strains of collaborative cross mice. Samples from the spleen and liver serve as the two domains. Several machine learning experiments are conducted and the small subset of discriminative across domains features have been extracted in each case. The algorithm proves viable and underlines the benefits of across domain feature selection by extracting new subset of discriminative features which couldn't be extracted only by one-domain approach.",
+      "link": "http://arxiv.org/abs/2405.02534v1",
+      "published": "2024-05-04T01:36:05Z",
+      "updated": "2024-05-04T01:36:05Z"
+    },
+    {
+      "title": "Cell reprogramming design by transfer learning of functional transcriptional networks",
+      "authors": [
+        "Thomas P. Wytock",
+        "Adilson E. Motter"
+      ],
+      "summary": "Recent developments in synthetic biology, next-generation sequencing, and machine learning provide an unprecedented opportunity to rationally design new disease treatments based on measured responses to gene perturbations and drugs to reprogram cells. The main challenges to seizing this opportunity are the incomplete knowledge of the cellular network and the combinatorial explosion of possible interventions, both of which are insurmountable by experiments. To address these challenges, we develop a transfer learning approach to control cell behavior that is pre-trained on transcriptomic data associated with human cell fates, thereby generating a model of the network dynamics that can be transferred to specific reprogramming goals. The approach combines transcriptional responses to gene perturbations to minimize the difference between a given pair of initial and target transcriptional states. We demonstrate our approach's versatility by applying it to a microarray dataset comprising >9,000 microarrays across 54 cell types and 227 unique perturbations, and an RNASeq dataset consisting of >10,000 sequencing runs across 36 cell types and 138 perturbations. Our approach reproduces known reprogramming protocols with an AUROC of 0.91 while innovating over existing methods by pre-training an adaptable model that can be tailored to specific reprogramming transitions. We show that the number of gene perturbations required to steer from one fate to another increases with decreasing developmental relatedness and that fewer genes are needed to progress along developmental paths than to regress. These findings establish a proof-of-concept for our approach to computationally design control strategies and provide insights into how gene regulatory networks govern phenotype.",
+      "link": "http://arxiv.org/abs/2403.04837v1",
+      "published": "2024-03-07T19:00:02Z",
+      "updated": "2024-03-07T19:00:02Z"
+    },
+    {
+      "title": "A Weibull Mixture Cure Frailty Model for High-dimensional Covariates",
+      "authors": [
+        "Fatih Kızılaslan",
+        "David Michael Swanson",
+        "Valeria Vitelli"
+      ],
+      "summary": "A novel mixture cure frailty model is introduced for handling censored survival data. Mixture cure models are preferable when the existence of a cured fraction among patients can be assumed. However, such models are heavily underexplored: frailty structures within cure models remain largely undeveloped, and furthermore, most existing methods do not work for high-dimensional datasets, when the number of predictors is significantly larger than the number of observations. In this study, we introduce a novel extension of the Weibull mixture cure model that incorporates a frailty component, employed to model an underlying latent population heterogeneity with respect to the outcome risk. Additionally, high-dimensional covariates are integrated into both the cure rate and survival part of the model, providing a comprehensive approach to employ the model in the context of high-dimensional omics data. We also perform variable selection via an adaptive elastic-net penalization, and propose a novel approach to inference using the expectation-maximization (EM) algorithm. Extensive simulation studies are conducted across various scenarios to demonstrate the performance of the model, and results indicate that our proposed method outperforms competitor models. We apply the novel approach to analyze RNAseq gene expression data from bulk breast cancer patients included in The Cancer Genome Atlas (TCGA) database. A set of prognostic biomarkers is then derived from selected genes, and subsequently validated via both functional enrichment analysis and comparison to the existing biological literature. Finally, a prognostic risk score index based on the identified biomarkers is proposed and validated by exploring the patients' survival.",
+      "link": "http://arxiv.org/abs/2401.06575v2",
+      "published": "2024-01-12T13:49:55Z",
+      "updated": "2024-04-26T09:18:45Z"
+    },
+    {
+      "title": "Semi-Supervised Clustering via Structural Entropy with Different Constraints",
+      "authors": [
+        "Guangjie Zeng",
+        "Hao Peng",
+        "Angsheng Li",
+        "Zhiwei Liu",
+        "Runze Yang",
+        "Chunyang Liu",
+        "Lifang He"
+      ],
+      "summary": "Semi-supervised clustering techniques have emerged as valuable tools for leveraging prior information in the form of constraints to improve the quality of clustering outcomes. Despite the proliferation of such methods, the ability to seamlessly integrate various types of constraints remains limited. While structural entropy has proven to be a powerful clustering approach with wide-ranging applications, it has lacked a variant capable of accommodating these constraints. In this work, we present Semi-supervised clustering via Structural Entropy (SSE), a novel method that can incorporate different types of constraints from diverse sources to perform both partitioning and hierarchical clustering. Specifically, we formulate a uniform view for the commonly used pairwise and label constraints for both types of clustering. Then, we design objectives that incorporate these constraints into structural entropy and develop tailored algorithms for their optimization. We evaluate SSE on nine clustering datasets and compare it with eleven semi-supervised partitioning and hierarchical clustering methods. Experimental results demonstrate the superiority of SSE on clustering accuracy with different types of constraints. Additionally, the functionality of SSE for biological data analysis is demonstrated by cell clustering experiments conducted on four single-cell RNAseq datasets.",
+      "link": "http://arxiv.org/abs/2312.10917v1",
+      "published": "2023-12-18T04:00:40Z",
+      "updated": "2023-12-18T04:00:40Z"
+    },
+    {
+      "title": "The Promise of Cross-Species Coexpression Analysis in Studying the Coevolution and Ecology of Host-Symbiont Interactions",
+      "authors": [
+        "Amanda K Hund",
+        "Peter Tiffin",
+        "Jean-Gabriel Young",
+        "Daniel I Bolnick"
+      ],
+      "summary": "Measuring gene expression simultaneously in both hosts and symbionts offers a powerful approach to explore the biology underlying species interactions. Such dual or simultaneous RNAseq approaches have primarily been used to gain insight into gene function in model systems, but there is opportunity to expand and apply these tools in new ways to understand ecological and evolutionary questions. By incorporating genetic diversity in both hosts and symbionts and studying how gene expression is correlated between partner species, we can gain new insight into host-symbiont coevolution and the ecology of species interactions. In this perspective, we explore how these relatively new tools could be applied to study such questions. We review the mechanisms that could be generating patterns of cross-species gene coexpression, including indirect genetic effects and selective filters, how these tools could be applied across different biological and temporal scales, and outline other methodological considerations and experiment possibilities.",
+      "link": "http://arxiv.org/abs/2206.12711v1",
+      "published": "2022-06-25T18:52:18Z",
+      "updated": "2022-06-25T18:52:18Z"
+    },
     {
       "title": "Online FDR Control for RNAseq Data",
       "authors": [
@@ -15,20 +121,45 @@
       "summary": "Motivation: While the analysis of a single RNA sequencing (RNAseq) dataset has been well described in the literature, modern research workflows often have additional complexity in that related RNAseq experiments are performed sequentially over time. The simplest and most widely used analysis strategy ignores the temporal aspects and analyses each dataset separately. However, this can lead to substantial inflation of the overall false discovery rate (FDR). We propose applying recently developed methodology for online hypothesis testing to analyse sequential RNAseq experiments in a principled way, guaranteeing FDR control at all times while never changing past decisions. Results: We show that standard offline approaches have variable control of FDR of related RNAseq experiments over time and a naively composed approach may improperly change historic decisions. We demonstrate that the online FDR algorithms are a principled way to guarantee control of FDR. Furthermore, in certain simulation scenarios, we observe empirically that online approaches have comparable power to offline approaches. Availability and Implementation: The onlineFDR package is freely available at http: //www.bioconductor.org/packages/onlineFDR. Additional code used for the simulation studies can be found at https://github.com/latlio/onlinefdr_rnaseq_simulation",
       "link": "http://arxiv.org/abs/2206.02213v1",
       "published": "2022-06-05T16:34:49Z",
-      "updated": "2022-06-07T00:17:55Z"
+      "updated": "2022-06-05T16:34:49Z"
     },
     {
-      "title": "ReadsMap: a new tool for high precision mapping of DNAseq and RNAseq read sequences",
+      "title": "Network analyses reveal negative link between changes in adipose tissue GDF15 and BMI during dietary-induced weight loss",
       "authors": [
-        "Igor Seledtsov",
-        "Jaroslav Efremov",
-        "Vladimir Molodtsov",
-        "Victor Solovyev"
+        "Alyssa Imbert",
+        "Nathalie Vialaneix",
+        "Julien Marquis",
+        "Julie Vion",
+        "Aline Charpagne",
+        "Sylviane Metairon",
+        "Claire Laurens",
+        "Cedric Moro",
+        "Nathalie Boulet",
+        "Ondine Walter",
+        "Grégory Lefebvre",
+        "Jörg Hager",
+        "Dominique Langin",
+        "Wim Saris",
+        "Arne Astrup",
+        "Nathalie Viguerie",
+        "Armand Valsesia"
       ],
-      "summary": "There are currently plenty of programs available for mapping short sequences (reads) to a genome. Most of them, however, including such popular and actively developed programs as Bowtie, BWA, TopHat and many others, are based on Burrows-Wheeler Transform (BWT) algorithm. This approach is very effective for mapping high-homology reads, but runs into problems when mapping reads with high level of errors or SNP. Also it has problems with mapping RNASeq spliced reads (such as reads that aligning with gaps corresponding intron sequences), the kind that is essential for finding introns and alternative splicing gene isoforms. Meanwhile, finding intron positions is the most important task for determining the gene structure, and especially alternatively spliced variants of genes. In this paper, we propose a new algorithm that involves hashing reference genome. ReadsMap program, implementing such algorithm, demonstrate very high-accuracy mapping of large number of short reads to one or more genomic contigs. It is achieved mostly by better alignment of very short parts of reads separated by long introns with accounting information from mapping other reads containing the same intron inserted between bigger blocks. Availability and implementation: ReadsMap is implemented in C. It is incorporated in Fgenesh++ gene identification pipeline and is freely available to academic users at Softberry web server www.softberry.com.",
-      "link": "http://arxiv.org/abs/1908.01445v1",
-      "published": "2019-08-05T02:29:04Z",
-      "updated": "2019-08-06T00:17:55Z"
+      "summary": "Adipose tissue (AT) transcriptome studies provide holistic pictures of adaptation to weight and related bioclinical settings changes. Objective To implement AT gene expression profiling and investigate the link between changes in bioclinical parameters and AT gene expression during 3 steps of a 2-phase dietary intervention (DI). Methods AT transcriptome profiling was obtained from sequencing 1051 samples, corresponding to 556 distinct individuals enrolled in a weight loss intervention (8-week low-calorie diet (LCD) at 800 kcal/day) followed with a 6-month ad libitum randomized DI. Transcriptome profiles obtained with QuantSeq sequencing were benchmarked against Illumina RNAseq. Reverse transcription quantitative polymerase chain reaction was used to further confirm associations. Cell specificity was assessed using freshly isolated cells and THP-1 cell line. Results During LCD, 5 modules were found, of which 3 included at least 1 bioclinical variable. Change in body mass index (BMI) connected with changes in mRNA level of genes with inflammatory response signature. In this module, change in BMI was negatively associated with changes in expression of genes encoding secreted protein (GDF15, CCL3, and SPP1). Through all phases of the DI, change in GDF15 was connected to changes in SPP1, CCL3, LIPA and CD68. Further characterization showed that these genes were specific to macrophages (with LIPA, CD68 and GDF15 expressed in anti-inflammatory macrophages) and GDF15 also expressed in preadipocytes. Conclusion Network analyses identified a novel AT feature with GDF15 upregulated with calorie restriction induced weight loss, concomitantly to macrophage markers. In AT, GDF15 was expressed in preadipocytes and macrophages where it was a hallmark of anti-inflammatory cells.",
+      "link": "http://arxiv.org/abs/2203.09356v1",
+      "published": "2022-03-17T14:40:25Z",
+      "updated": "2022-03-17T14:40:25Z"
+    },
+    {
+      "title": "Geometric structure guided model and algorithms for complete deconvolution of gene expression data",
+      "authors": [
+        "Duan Chen",
+        "Shaoyu Li",
+        "Xue Wang"
+      ],
+      "summary": "Complete deconvolution analysis for bulk RNAseq data is important and helpful to distinguish whether the difference of disease-associated GEPs (gene expression profiles) in tissues of patients and normal controls are due to changes in cellular composition of tissue samples, or due to GEPs changes in specific cells. One of the major techniques to perform complete deconvolution is nonnegative matrix factorization (NMF), which also has a wide-range of applications in the machine learning community. However, the NMF is a well-known strongly ill-posed problem, so a direct application of NMF to RNAseq data will suffer severe difficulties in the interpretability of solutions. In this paper we develop an NMF-based mathematical model and corresponding computational algorithms to improve the solution identifiability of deconvoluting bulk RNAseq data. In our approach, we combine the biological concept of marker genes with the solvability conditions of the NMF theories, and develop a geometric structured guided optimization model. In this strategy, the geometric structure of bulk tissue data is first explored by the spectral clustering technique. Then, the identified information of marker genes is integrated as solvability constraints, while the overall correlation graph is used as manifold regularization. Both synthetic and biological data are used to validate the proposed model and algorithms, from which solution interpretability and accuracy are significantly improved.",
+      "link": "http://arxiv.org/abs/2202.08733v1",
+      "published": "2022-02-17T16:15:31Z",
+      "updated": "2022-02-17T16:15:31Z"
     },
     {
       "title": "Client applications and Server Side docker for management of RNASeq and/or VariantSeq workflows and pipelines of the GPRO Suite",
@@ -55,31 +186,86 @@
       "summary": "The GPRO suite is an in-progress bioinformatic project for -omic data analyses. As part of the continued growth of this project, we introduce a client side & server side solution for comparative transcriptomics and analysis of variants. The client side consists of two Java applications called \"RNASeq\" and \"VariantSeq\" to manage workflows for RNA-seq and Variant-seq analysis, respectively, based on the most common command line interface tools for each topic. Both applications are coupled with a Linux server infrastructure (named GPRO Server Side) that hosts all dependencies of each application (scripts, databases, and command line interface tools). Implementation of the server side requires a Linux operating system, PHP, SQL, Python, bash scripting, and third-party software. The GPRO Server Side can be deployed via a Docker container that can be installed in the user's PC using any operating system or on remote servers as a cloud solution. The two applications are available as desktop and cloud applications and provide two execution modes: a Step-by-Step mode enables each step of a workflow to be executed independently and a Pipeline mode allows all steps to be run sequentially. The two applications also feature an experimental support system called GENIE that consists of a virtual chatbot/assistant and a pipeline jobs panel coupled with an expert system. The chatbot can troubleshoot issues with the usage of each tool, the pipeline job panel provides information about the status of each task executed in the GPRO Server Side, and the expert provides the user with a potential recommendation to identify or fix failed analyses. The two applications and the GPRO Server Side combine the user-friendliness and security of client software with the efficiency of front-end & back-end solutions to manage command line interface software for RNA-seq and variant-seq analysis via interface environments.",
       "link": "http://arxiv.org/abs/2202.07473v4",
       "published": "2022-02-14T12:00:35Z",
-      "updated": "2022-11-22T01:07:58Z"
+      "updated": "2022-11-19T12:29:58Z"
     },
     {
-      "title": "Geometric structure guided model and algorithms for complete deconvolution of gene expression data",
+      "title": "Rank-based Bayesian variable selection for genome-wide transcriptomic analyses",
       "authors": [
-        "Duan Chen",
-        "Shaoyu Li",
-        "Xue Wang"
+        "Emilie Eliseussen",
+        "Thomas Fleischer",
+        "Valeria Vitelli"
       ],
-      "summary": "Complete deconvolution analysis for bulk RNAseq data is important and helpful to distinguish whether the difference of disease-associated GEPs (gene expression profiles) in tissues of patients and normal controls are due to changes in cellular composition of tissue samples, or due to GEPs changes in specific cells. One of the major techniques to perform complete deconvolution is nonnegative matrix factorization (NMF), which also has a wide-range of applications in the machine learning community. However, the NMF is a well-known strongly ill-posed problem, so a direct application of NMF to RNAseq data will suffer severe difficulties in the interpretability of solutions. In this paper we develop an NMF-based mathematical model and corresponding computational algorithms to improve the solution identifiability of deconvoluting bulk RNAseq data. In our approach, we combine the biological concept of marker genes with the solvability conditions of the NMF theories, and develop a geometric structured guided optimization model. In this strategy, the geometric structure of bulk tissue data is first explored by the spectral clustering technique. Then, the identified information of marker genes is integrated as solvability constraints, while the overall correlation graph is used as manifold regularization. Both synthetic and biological data are used to validate the proposed model and algorithms, from which solution interpretability and accuracy are significantly improved.",
-      "link": "http://arxiv.org/abs/2202.08733v1",
-      "published": "2022-02-17T16:15:31Z",
-      "updated": "2022-02-18T01:22:42Z"
+      "summary": "Variable selection is crucial in high-dimensional omics-based analyses, since it is biologically reasonable to assume only a subset of non-noisy features contributes to the data structures. However, the task is particularly hard in an unsupervised setting, and a priori ad hoc variable selection is still a very frequent approach, despite the evident drawbacks and lack of reproducibility. We propose a Bayesian variable selection approach for rank-based unsupervised transcriptomic analysis. Making use of data rankings instead of the actual continuous measurements increases the robustness of conclusions when compared to classical statistical methods, and embedding variable selection into the inferential tasks allows complete reproducibility. Specifically, we develop a novel extension of the Bayesian Mallows model for variable selection that allows for a full probabilistic analysis, leading to coherent quantification of uncertainties. Simulation studies demonstrate the versatility and robustness of the proposed method in a variety of scenarios, as well as its superiority with respect to several competitors when varying the data dimension or data generating process. We use the novel approach to analyse genome-wide RNAseq gene expression data from ovarian cancer patients: several genes that affect cancer development are correctly detected in a completely unsupervised fashion, showing the usefulness of the method in the context of signature discovery for cancer genomics. Moreover, the possibility to also perform uncertainty quantification plays a key role in the subsequent biological investigation.",
+      "link": "http://arxiv.org/abs/2107.05072v2",
+      "published": "2021-07-11T15:33:18Z",
+      "updated": "2022-03-20T09:46:58Z"
     },
     {
-      "title": "Association of genomic subtypes of lower-grade gliomas with shape features automatically extracted by a deep learning algorithm",
+      "title": "Semi-supervised empirical Bayes group-regularized factor regression",
       "authors": [
-        "Mateusz Buda",
-        "Ashirbani Saha",
-        "Maciej A Mazurowski"
+        "Magnus M. Münch",
+        "Mark A. van de Wiel",
+        "Aad W. van der Vaart",
+        "Carel F. W. Peeters"
       ],
-      "summary": "Recent analysis identified distinct genomic subtypes of lower-grade glioma tumors which are associated with shape features. In this study, we propose a fully automatic way to quantify tumor imaging characteristics using deep learning-based segmentation and test whether these characteristics are predictive of tumor genomic subtypes. We used preoperative imaging and genomic data of 110 patients from 5 institutions with lower-grade gliomas from The Cancer Genome Atlas. Based on automatic deep learning segmentations, we extracted three features which quantify two-dimensional and three-dimensional characteristics of the tumors. Genomic data for the analyzed cohort of patients consisted of previously identified genomic clusters based on IDH mutation and 1p/19q co-deletion, DNA methylation, gene expression, DNA copy number, and microRNA expression. To analyze the relationship between the imaging features and genomic clusters, we conducted the Fisher exact test for 10 hypotheses for each pair of imaging feature and genomic subtype. To account for multiple hypothesis testing, we applied a Bonferroni correction. P-values lower than 0.005 were considered statistically significant. We found the strongest association between RNASeq clusters and the bounding ellipsoid volume ratio ($p<0.0002$) and between RNASeq clusters and margin fluctuation ($p<0.005$). In addition, we identified associations between bounding ellipsoid volume ratio and all tested molecular subtypes ($p<0.02$) as well as between angular standard deviation and RNASeq cluster ($p<0.02$). In terms of automatic tumor segmentation that was used to generate the quantitative image characteristics, our deep learning algorithm achieved a mean Dice coefficient of 82% which is comparable to human performance.",
-      "link": "http://arxiv.org/abs/1906.03720v1",
-      "published": "2019-06-09T21:45:57Z",
-      "updated": "2019-06-11T00:20:00Z"
+      "summary": "The features in high dimensional biomedical prediction problems are often well described with lower dimensional manifolds. An example is genes that are organised in smaller functional networks. The outcome can then be described with the factor regression model. A benefit of the factor model is that is allows for straightforward inclusion of unlabeled observations in the estimation of the model, i.e., semi-supervised learning. In addition, the high dimensional features in biomedical prediction problems are often well characterised. Examples are genes, for which annotation is available, and metabolites with $p$-values from a previous study available. In this paper, the extra information on the features is included in the prior model for the features. The extra information is weighted and included in the estimation through empirical Bayes, with Variational approximations to speed up the computation. The method is demonstrated in simulations and two applications. One application considers influenza vaccine efficacy prediction based on microarray data. The second application predictions oral cancer metastatsis from RNAseq data.",
+      "link": "http://arxiv.org/abs/2104.02419v1",
+      "published": "2021-04-06T10:52:01Z",
+      "updated": "2021-04-06T10:52:01Z"
+    },
+    {
+      "title": "A Graph Feature Auto-Encoder for the Prediction of Unobserved Node Features on Biological Networks",
+      "authors": [
+        "Ramin Hasibi",
+        "Tom Michoel"
+      ],
+      "summary": "Motivation: Molecular interaction networks summarize complex biological processes as graphs, whose structure is informative of biological function at multiple scales. Simultaneously, omics technologies measure the variation or activity of genes, proteins, or metabolites across individuals or experimental conditions. Integrating the complementary viewpoints of biological networks and omics data is an important task in bioinformatics, but existing methods treat networks as discrete structures, which are intrinsically difficult to integrate with continuous node features or activity measures. Graph neural networks map graph nodes into a low-dimensional vector space representation, and can be trained to preserve both the local graph structure and the similarity between node features.\n  Results: We studied the representation of transcriptional, protein-protein and genetic interaction networks in E. Coli and mouse using graph neural networks. We found that such representations explain a large proportion of variation in gene expression data, and that using gene expression data as node features improves the reconstruction of the graph from the embedding. We further proposed a new end-to-end graph feature auto-encoder which is trained on the feature reconstruction task, and showed that it performs better at predicting unobserved node features than auto-encoders that are trained on the graph reconstruction task before learning to predict node features. When applied to the problem of imputing missing data in single-cell RNAseq data, our graph feature auto-encoder outperformed a state-of-the-art imputation method that does not use protein interaction information, showing the benefit of integrating biological networks and omics data using graph representation learning.",
+      "link": "http://arxiv.org/abs/2005.03961v2",
+      "published": "2020-05-08T11:23:04Z",
+      "updated": "2020-12-23T09:18:25Z"
+    },
+    {
+      "title": "Transcriptional profiling reveals fundamental differences in iPS-derived progenitors of endothelial cells (PECs) versus adult circulating EPCs",
+      "authors": [
+        "Elmira Jalilian",
+        "William Raimes"
+      ],
+      "summary": "There are a number of different stem cell sources that have the potential to be used as therapeutics in vascular degenerative diseases. On the one hand, there are so called endothelial progenitor cells (EPCs), which are typically derived from adult blood. They carry the marker CD34, but the true nature and definition of EPCs is still controversial. On the other hand, there are embryonic precursors of endothelial cells (PECs), which also express CD34, and can be differentiated from embryonic stem cells (ESCs) or induced pluripotent stem cells (iPSCs) in vitro. In this study, it was aimed to compare these two different CD34 positive cell populations by full genome transcriptional profiling (RNAseq). To this end, we firstly optimised a PEC differentiation protocol and found that vascular endothelial growth factor (VEGF) is critical for the transition of cells from mesodermal precursors to PECs. Additionally, principal component analysis (PCA) of RNAseq data showed that blood-derived EPCs clustered far from iPS-derived PECs which illustrates these populations are fundamentally different. This data will be useful to better define these cell populations and facilitating the translation of regenerative approaches in this field as well as providing potentially novel diagnostic tools.",
+      "link": "http://arxiv.org/abs/2005.01491v1",
+      "published": "2020-05-04T13:47:25Z",
+      "updated": "2020-05-04T13:47:25Z"
+    },
+    {
+      "title": "Primary and secondary anti-viral response captured by the dynamics and phenotype of individual T cell clones",
+      "authors": [
+        "Anastasia A. Minervina",
+        "Mikhail V. Pogorelyy",
+        "Ekaterina A. Komech",
+        "Vadim K. Karnaukhov",
+        "Petra Bacher",
+        "Elisa Rosati",
+        "Andre Franke",
+        "Dmitriy M. Chudakov",
+        "Ilgar Z. Mamedov",
+        "Yuri B. Lebedev",
+        "Thierry Mora",
+        "Aleksandra M. Walczak"
+      ],
+      "summary": "The diverse repertoire of T-cell receptors (TCR) plays a key role in the adaptive immune response to infections. Previous studies show that secondary responses to the yellow fever vaccine - the model for acute infection in humans - are weaker than primary ones, but only quantitative measurements can describe the concentration changes and lineage fates for distinct T-cell clones in vivo over time. Using TCR alpha and beta repertoire sequencing for T-cell subsets, as well as single-cell RNAseq and TCRseq, we track the concentrations and phenotypes of individual T-cell clones in response to primary and secondary yellow fever immunization showing their large diversity. We confirm the secondary response is an order of magnitude weaker, albeit $\\sim10$ days faster than the primary one. Estimating the fraction of the T-cell response directed against the single immunodominant epitope, we identify the sequence features of TCRs that define the high precursor frequency of the two major TCR motifs specific for this particular epitope. We also show the consistency of clonal expansion dynamics between bulk alpha and beta repertoires, using a new methodology to reconstruct alpha-beta pairings from clonal trajectories.",
+      "link": "http://arxiv.org/abs/1910.11928v2",
+      "published": "2019-10-25T20:44:15Z",
+      "updated": "2020-03-03T08:55:17Z"
+    },
+    {
+      "title": "Noncoding RNAs serve as the deadliest regulators for cancer",
+      "authors": [
+        "Anyou Wang",
+        "Hai Rong"
+      ],
+      "summary": "Cancer is one of the leading causes of human death. Many efforts have made to understand its mechanism and have further identified many proteins and DNA sequence variations as suspected targets for therapy. However, drugs targeting these targets have low success rates, suggesting the basic mechanism still remains unclear. Here, we develop a computational software combining Cox proportional-hazards model and stability-selection to unearth an overlooked, yet the most important cancer drivers hidden in massive data from The Cancer Genome Atlas (TCGA), including 11,574 RNAseq samples and clinic data. Generally, noncoding RNAs primarily regulate cancer deaths and work as the deadliest cancer inducers and repressors, in contrast to proteins as conventionally thought. Especially, processed-pseudogenes serve as the primary cancer inducers, while lincRNA and antisense RNAs dominate the repressors. Strikingly, noncoding RNAs serves as the universal strongest regulators for all cancer types although personal clinic variables such as alcohol and smoking significantly alter cancer genome. Furthermore, noncoding RNAs also work as central hubs in cancer regulatory network and as biomarkers to discriminate cancer types. Therefore, noncoding RNAs overall serve as the deadliest cancer regulators, which refreshes the basic concept of cancer mechanism and builds a novel basis for cancer research and therapy. Biological functions of pseudogenes have rarely been recognized. Here we reveal them as the most important cancer drivers for all cancer types from big data, breaking a wall to explore their biological potentials.",
+      "link": "http://arxiv.org/abs/1910.03934v1",
+      "published": "2019-10-08T05:42:36Z",
+      "updated": "2019-10-08T05:42:36Z"
     },
     {
       "title": "A data-driven method for quantifying the impact of a genetic circuit on its host",
@@ -103,42 +289,7 @@
       "summary": "Genetic circuits are designed to implement certain logic in living cells, keeping burden on the host cell minimal. However, manipulating the genome often will have a significant impact for various reasons (usage of the cell machinery to express new genes, toxicity of genes, interactions with native genes, etc.). In this work we utilize Koopman operator theory to construct data-driven models of transcriptomic-level dynamics from noisy and temporally sparse RNAseq measurements. We show how Koopman models can be used to quantify impact on genetic circuits. We consider an experimental example, using high-throughput RNAseq measurements collected from wild-type E. coli, single gate components transformed in E. coli, and a NAND circuit composed from individual gates in E. coli, to explore how Koopman subspace functions encode increasing circuit interference on E. coli chassis dynamics. The algorithm provides a novel method for quantifying the impact of synthetic biological circuits on host-chassis dynamics.",
       "link": "http://arxiv.org/abs/1909.06455v1",
       "published": "2019-09-13T21:19:41Z",
-      "updated": "2019-09-17T00:03:29Z"
-    },
-    {
-      "title": "Transcriptional profiling reveals fundamental differences in iPS-derived progenitors of endothelial cells (PECs) versus adult circulating EPCs",
-      "authors": [
-        "Elmira Jalilian",
-        "William Raimes"
-      ],
-      "summary": "There are a number of different stem cell sources that have the potential to be used as therapeutics in vascular degenerative diseases. On the one hand, there are so called endothelial progenitor cells (EPCs), which are typically derived from adult blood. They carry the marker CD34, but the true nature and definition of EPCs is still controversial. On the other hand, there are embryonic precursors of endothelial cells (PECs), which also express CD34, and can be differentiated from embryonic stem cells (ESCs) or induced pluripotent stem cells (iPSCs) in vitro. In this study, it was aimed to compare these two different CD34 positive cell populations by full genome transcriptional profiling (RNAseq). To this end, we firstly optimised a PEC differentiation protocol and found that vascular endothelial growth factor (VEGF) is critical for the transition of cells from mesodermal precursors to PECs. Additionally, principal component analysis (PCA) of RNAseq data showed that blood-derived EPCs clustered far from iPS-derived PECs which illustrates these populations are fundamentally different. This data will be useful to better define these cell populations and facilitating the translation of regenerative approaches in this field as well as providing potentially novel diagnostic tools.",
-      "link": "http://arxiv.org/abs/2005.01491v1",
-      "published": "2020-05-04T13:47:25Z",
-      "updated": "2020-05-05T00:30:01Z"
-    },
-    {
-      "title": "A Multi-Domain Multi-Task Approach for Feature Selection from Bulk RNA Datasets",
-      "authors": [
-        "Karim Salta",
-        "Tomojit Ghosh",
-        "Michael Kirby"
-      ],
-      "summary": "In this paper a multi-domain multi-task algorithm for feature selection in bulk RNAseq data is proposed. Two datasets are investigated arising from mouse host immune response to Salmonella infection. Data is collected from several strains of collaborative cross mice. Samples from the spleen and liver serve as the two domains. Several machine learning experiments are conducted and the small subset of discriminative across domains features have been extracted in each case. The algorithm proves viable and underlines the benefits of across domain feature selection by extracting new subset of discriminative features which couldn't be extracted only by one-domain approach.",
-      "link": "http://arxiv.org/abs/2405.02534v1",
-      "published": "2024-05-04T01:36:05Z",
-      "updated": "2024-05-07T00:12:36Z"
-    },
-    {
-      "title": "Trajectory Inference with Smooth Schrödinger Bridges",
-      "authors": [
-        "Wanli Hong",
-        "Yuliang Shi",
-        "Jonathan Niles-Weed"
-      ],
-      "summary": "Motivated by applications in trajectory inference and particle tracking, we introduce Smooth Schrödinger Bridges. Our proposal generalizes prior work by allowing the reference process in the Schrödinger Bridge problem to be a smooth Gaussian process, leading to more regular and interpretable trajectories in applications. Though naïvely smoothing the reference process leads to a computationally intractable problem, we identify a class of processes (including the Matérn processes) for which the resulting Smooth Schrödinger Bridge problem can be lifted to a simpler problem on phase space, which can be solved in polynomial time. We develop a practical approximation of this algorithm that outperforms existing methods on numerous simulated and real single-cell RNAseq datasets. The code can be found at https://github.com/WanliHongC/Smooth_SB",
-      "link": "http://arxiv.org/abs/2503.00530v1",
-      "published": "2025-03-01T15:12:01Z",
-      "updated": "2025-03-04T01:45:17Z"
+      "updated": "2019-09-13T21:19:41Z"
     },
     {
       "title": "Fusing heterogeneous data sets",
@@ -148,150 +299,7 @@
       "summary": "In systems biology, it is common to measure biochemical entities at different levels of the same biological system. One of the central problems for the data fusion of such data sets is the heterogeneity of the data. This thesis discusses two types of heterogeneity. The first one is the type of data, such as metabolomics, proteomics and RNAseq data in genomics. These different omics data reflect the properties of the studied biological system from different perspectives. The second one is the type of scale, which indicates the measurements obtained at different scales, such as binary, ordinal, interval and ratio-scaled variables. In this thesis, we developed several statistical methods capable to fuse data sets of these two types of heterogeneity. The advantages of the proposed methods in comparison with other approaches are assessed using comprehensive simulations as well as the analysis of real biological data sets.",
       "link": "http://arxiv.org/abs/1908.09653v1",
       "published": "2019-08-23T12:20:04Z",
-      "updated": "2019-08-27T00:24:15Z"
-    },
-    {
-      "title": "Semi-supervised empirical Bayes group-regularized factor regression",
-      "authors": [
-        "Magnus M. Münch",
-        "Mark A. van de Wiel",
-        "Aad W. van der Vaart",
-        "Carel F. W. Peeters"
-      ],
-      "summary": "The features in high dimensional biomedical prediction problems are often well described with lower dimensional manifolds. An example is genes that are organised in smaller functional networks. The outcome can then be described with the factor regression model. A benefit of the factor model is that is allows for straightforward inclusion of unlabeled observations in the estimation of the model, i.e., semi-supervised learning. In addition, the high dimensional features in biomedical prediction problems are often well characterised. Examples are genes, for which annotation is available, and metabolites with $p$-values from a previous study available. In this paper, the extra information on the features is included in the prior model for the features. The extra information is weighted and included in the estimation through empirical Bayes, with Variational approximations to speed up the computation. The method is demonstrated in simulations and two applications. One application considers influenza vaccine efficacy prediction based on microarray data. The second application predictions oral cancer metastatsis from RNAseq data.",
-      "link": "http://arxiv.org/abs/2104.02419v1",
-      "published": "2021-04-06T10:52:01Z",
-      "updated": "2024-09-02T00:33:36Z"
-    },
-    {
-      "title": "The Promise of Cross-Species Coexpression Analysis in Studying the Coevolution and Ecology of Host-Symbiont Interactions",
-      "authors": [
-        "Amanda K Hund",
-        "Peter Tiffin",
-        "Jean-Gabriel Young",
-        "Daniel I Bolnick"
-      ],
-      "summary": "Measuring gene expression simultaneously in both hosts and symbionts offers a powerful approach to explore the biology underlying species interactions. Such dual or simultaneous RNAseq approaches have primarily been used to gain insight into gene function in model systems, but there is opportunity to expand and apply these tools in new ways to understand ecological and evolutionary questions. By incorporating genetic diversity in both hosts and symbionts and studying how gene expression is correlated between partner species, we can gain new insight into host-symbiont coevolution and the ecology of species interactions. In this perspective, we explore how these relatively new tools could be applied to study such questions. We review the mechanisms that could be generating patterns of cross-species gene coexpression, including indirect genetic effects and selective filters, how these tools could be applied across different biological and temporal scales, and outline other methodological considerations and experiment possibilities.",
-      "link": "http://arxiv.org/abs/2206.12711v1",
-      "published": "2022-06-25T18:52:18Z",
-      "updated": "2022-06-28T00:10:32Z"
-    },
-    {
-      "title": "Estimation of High-Dimensional Graphical Models Using Regularized Score Matching",
-      "authors": [
-        "Lina Lin",
-        "Mathias Drton",
-        "Ali Shojaie"
-      ],
-      "summary": "Graphical models are widely used to model stochastic dependences among large collections of variables. We introduce a new method of estimating undirected conditional independence graphs based on the score matching loss, introduced by Hyvarinen (2005), and subsequently extended in Hyvarinen (2007). The regularized score matching method we propose applies to settings with continuous observations and allows for computationally efficient treatment of possibly non-Gaussian exponential family models. In the well-explored Gaussian setting, regularized score matching avoids issues of asymmetry that arise when applying the technique of neighborhood selection, and compared to existing methods that directly yield symmetric estimates, the score matching approach has the advantage that the considered loss is quadratic and gives piecewise linear solution paths under $\\ell_1$ regularization. Under suitable irrepresentability conditions, we show that $\\ell_1$-regularized score matching is consistent for graph estimation in sparse high-dimensional settings. Through numerical experiments and an application to RNAseq data, we confirm that regularized score matching achieves state-of-the-art performance in the Gaussian case and provides a valuable tool for computationally efficient estimation in non-Gaussian graphical models.",
-      "link": "http://arxiv.org/abs/1507.00433v2",
-      "published": "2015-07-02T05:48:12Z",
-      "updated": "2016-03-24T00:11:40Z"
-    },
-    {
-      "title": "Semi-Supervised Clustering via Structural Entropy with Different Constraints",
-      "authors": [
-        "Guangjie Zeng",
-        "Hao Peng",
-        "Angsheng Li",
-        "Zhiwei Liu",
-        "Runze Yang",
-        "Chunyang Liu",
-        "Lifang He"
-      ],
-      "summary": "Semi-supervised clustering techniques have emerged as valuable tools for leveraging prior information in the form of constraints to improve the quality of clustering outcomes. Despite the proliferation of such methods, the ability to seamlessly integrate various types of constraints remains limited. While structural entropy has proven to be a powerful clustering approach with wide-ranging applications, it has lacked a variant capable of accommodating these constraints. In this work, we present Semi-supervised clustering via Structural Entropy (SSE), a novel method that can incorporate different types of constraints from diverse sources to perform both partitioning and hierarchical clustering. Specifically, we formulate a uniform view for the commonly used pairwise and label constraints for both types of clustering. Then, we design objectives that incorporate these constraints into structural entropy and develop tailored algorithms for their optimization. We evaluate SSE on nine clustering datasets and compare it with eleven semi-supervised partitioning and hierarchical clustering methods. Experimental results demonstrate the superiority of SSE on clustering accuracy with different types of constraints. Additionally, the functionality of SSE for biological data analysis is demonstrated by cell clustering experiments conducted on four single-cell RNAseq datasets.",
-      "link": "http://arxiv.org/abs/2312.10917v1",
-      "published": "2023-12-18T04:00:40Z",
-      "updated": "2023-12-19T03:19:53Z"
-    },
-    {
-      "title": "Improving transcriptome assembly through error correction of high-throughput sequence reads",
-      "authors": [
-        "Matthew D MacManes",
-        "Michael B Eisen"
-      ],
-      "summary": "The study of functional genomics--particularly in non-model organisms has been dramatically improved over the last few years by use of transcriptomes and RNAseq. While these studies are potentially extremely powerful, a computationally intensive procedure--the de novo construction of a reference transcriptome must be completed as a prerequisite to further analyses. The accurate reference is critically important as all downstream steps, including estimating transcript abundance are critically dependent on the construction of an accurate reference. Though a substantial amount of research has been done on assembly, only recently have the pre-assembly procedures been studied in detail. Specifically, several stand-alone error correction modules have been reported on, and while they have shown to be effective in reducing errors at the level of sequencing reads, how error correction impacts assembly accuracy is largely unknown. Here, we show via use of a simulated dataset, that applying error correction to sequencing reads has significant positive effects on assembly accuracy, by reducing assembly error by nearly 50%, and therefore should be applied to all datasets.",
-      "link": "http://arxiv.org/abs/1304.0817v3",
-      "published": "2013-04-03T00:46:24Z",
-      "updated": "2013-07-25T00:02:10Z"
-    },
-    {
-      "title": "Alpha7 nicotinic acetylcholine receptor signaling modulates ovine fetal brain astrocytes transcriptome in response to endotoxin",
-      "authors": [
-        "M. Cao",
-        "J. W. MacDonald",
-        "H. L. Liu",
-        "M. Weaver",
-        "M. Cortes",
-        "L. D. Durosier",
-        "P. Burns",
-        "G. Fecteau",
-        "A. Desrochers",
-        "J. Schulkin",
-        "M. C. Antonelli",
-        "R. A. Bernier",
-        "M. Dorschner",
-        "T. K. Bammler",
-        "M. G. Frasch"
-      ],
-      "summary": "Neuroinflammation in utero may result in lifelong neurological disabilities. Astrocytes play a pivotal role, but the mechanisms are poorly understood. No early postnatal treatment strategies exist to enhance neuroprotective potential of astrocytes. We hypothesized that agonism on alpha7 nicotinic acetylcholine receptor (alpha7nAChR) in fetal astrocytes will augment their neuroprotective transcriptome profile, while the antagonistic stimulation of alpha7nAChR will achieve the opposite. Using an in vivo - in vitro model of developmental programming of neuroinflammation induced by lipopolysaccharide (LPS), we validated this hypothesis in primary fetal sheep astrocytes cultures re-exposed to LPS in presence of a selective alpha7nAChR agonist or antagonist. Our RNAseq findings show that a pro-inflammatory astrocyte transcriptome phenotype acquired in vitro by LPS stimulation is reversed with alpha7nAChR agonistic stimulation. Conversely, antagonistic alpha7nAChR stimulation potentiates the pro-inflammatory astrocytic transcriptome phenotype. Furthermore, we conduct a secondary transcriptome analysis against the identical alpha7nAChR experiments in fetal sheep primary microglia cultures and discuss the implications for neurodevelopment.",
-      "link": "http://arxiv.org/abs/1812.06617v4",
-      "published": "2018-12-17T05:05:09Z",
-      "updated": "2019-04-29T00:00:43Z"
-    },
-    {
-      "title": "Joint association and classification analysis of multi-view data",
-      "authors": [
-        "Yunfeng Zhang",
-        "Irina Gaynanova"
-      ],
-      "summary": "Multi-view data, that is matched sets of measurements on the same subjects, have become increasingly common with advances in multi-omics technology. Often, it is of interest to find associations between the views that are related to the intrinsic class memberships. Existing association methods cannot directly incorporate class information, while existing classification methods do not take into account between-views associations. In this work, we propose a framework for Joint Association and Classification Analysis of multi-view data (JACA). Our goal is not to merely improve the misclassification rates, but to provide a latent representation of high-dimensional data that is both relevant for the subtype discrimination and coherent across the views. We motivate the methodology by establishing a connection between canonical correlation analysis and discriminant analysis. We also establish the estimation consistency of JACA in high-dimensional settings. A distinct advantage of JACA is that it can be applied to the multi-view data with block-missing structure, that is to cases where a subset of views or class labels is missing for some subjects. The application of JACA to quantify the associations between RNAseq and miRNA views with respect to consensus molecular subtypes in colorectal cancer data from The Cancer Genome Atlas project leads to improved misclassification rates and stronger found associations compared to existing methods.",
-      "link": "http://arxiv.org/abs/1811.08511v2",
-      "published": "2018-11-20T22:15:19Z",
-      "updated": "2020-10-02T00:11:54Z"
-    },
-    {
-      "title": "Noncoding RNAs serve as the deadliest regulators for cancer",
-      "authors": [
-        "Anyou Wang",
-        "Hai Rong"
-      ],
-      "summary": "Cancer is one of the leading causes of human death. Many efforts have made to understand its mechanism and have further identified many proteins and DNA sequence variations as suspected targets for therapy. However, drugs targeting these targets have low success rates, suggesting the basic mechanism still remains unclear. Here, we develop a computational software combining Cox proportional-hazards model and stability-selection to unearth an overlooked, yet the most important cancer drivers hidden in massive data from The Cancer Genome Atlas (TCGA), including 11,574 RNAseq samples and clinic data. Generally, noncoding RNAs primarily regulate cancer deaths and work as the deadliest cancer inducers and repressors, in contrast to proteins as conventionally thought. Especially, processed-pseudogenes serve as the primary cancer inducers, while lincRNA and antisense RNAs dominate the repressors. Strikingly, noncoding RNAs serves as the universal strongest regulators for all cancer types although personal clinic variables such as alcohol and smoking significantly alter cancer genome. Furthermore, noncoding RNAs also work as central hubs in cancer regulatory network and as biomarkers to discriminate cancer types. Therefore, noncoding RNAs overall serve as the deadliest cancer regulators, which refreshes the basic concept of cancer mechanism and builds a novel basis for cancer research and therapy. Biological functions of pseudogenes have rarely been recognized. Here we reveal them as the most important cancer drivers for all cancer types from big data, breaking a wall to explore their biological potentials.",
-      "link": "http://arxiv.org/abs/1910.03934v1",
-      "published": "2019-10-08T05:42:36Z",
-      "updated": "2019-10-10T00:13:16Z"
-    },
-    {
-      "title": "A Graph Feature Auto-Encoder for the Prediction of Unobserved Node Features on Biological Networks",
-      "authors": [
-        "Ramin Hasibi",
-        "Tom Michoel"
-      ],
-      "summary": "Motivation: Molecular interaction networks summarize complex biological processes as graphs, whose structure is informative of biological function at multiple scales. Simultaneously, omics technologies measure the variation or activity of genes, proteins, or metabolites across individuals or experimental conditions. Integrating the complementary viewpoints of biological networks and omics data is an important task in bioinformatics, but existing methods treat networks as discrete structures, which are intrinsically difficult to integrate with continuous node features or activity measures. Graph neural networks map graph nodes into a low-dimensional vector space representation, and can be trained to preserve both the local graph structure and the similarity between node features.\n  Results: We studied the representation of transcriptional, protein-protein and genetic interaction networks in E. Coli and mouse using graph neural networks. We found that such representations explain a large proportion of variation in gene expression data, and that using gene expression data as node features improves the reconstruction of the graph from the embedding. We further proposed a new end-to-end graph feature auto-encoder which is trained on the feature reconstruction task, and showed that it performs better at predicting unobserved node features than auto-encoders that are trained on the graph reconstruction task before learning to predict node features. When applied to the problem of imputing missing data in single-cell RNAseq data, our graph feature auto-encoder outperformed a state-of-the-art imputation method that does not use protein interaction information, showing the benefit of integrating biological networks and omics data using graph representation learning.",
-      "link": "http://arxiv.org/abs/2005.03961v2",
-      "published": "2020-05-08T11:23:04Z",
-      "updated": "2020-12-24T01:12:29Z"
-    },
-    {
-      "title": "Primary and secondary anti-viral response captured by the dynamics and phenotype of individual T cell clones",
-      "authors": [
-        "Anastasia A. Minervina",
-        "Mikhail V. Pogorelyy",
-        "Ekaterina A. Komech",
-        "Vadim K. Karnaukhov",
-        "Petra Bacher",
-        "Elisa Rosati",
-        "Andre Franke",
-        "Dmitriy M. Chudakov",
-        "Ilgar Z. Mamedov",
-        "Yuri B. Lebedev",
-        "Thierry Mora",
-        "Aleksandra M. Walczak"
-      ],
-      "summary": "The diverse repertoire of T-cell receptors (TCR) plays a key role in the adaptive immune response to infections. Previous studies show that secondary responses to the yellow fever vaccine - the model for acute infection in humans - are weaker than primary ones, but only quantitative measurements can describe the concentration changes and lineage fates for distinct T-cell clones in vivo over time. Using TCR alpha and beta repertoire sequencing for T-cell subsets, as well as single-cell RNAseq and TCRseq, we track the concentrations and phenotypes of individual T-cell clones in response to primary and secondary yellow fever immunization showing their large diversity. We confirm the secondary response is an order of magnitude weaker, albeit $\\sim10$ days faster than the primary one. Estimating the fraction of the T-cell response directed against the single immunodominant epitope, we identify the sequence features of TCRs that define the high precursor frequency of the two major TCR motifs specific for this particular epitope. We also show the consistency of clonal expansion dynamics between bulk alpha and beta repertoires, using a new methodology to reconstruct alpha-beta pairings from clonal trajectories.",
-      "link": "http://arxiv.org/abs/1910.11928v2",
-      "published": "2019-10-25T20:44:15Z",
-      "updated": "2020-11-20T01:20:18Z"
+      "updated": "2019-08-23T12:20:04Z"
     }
   ]
 }
